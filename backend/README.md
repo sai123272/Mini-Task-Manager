@@ -14,4 +14,7 @@ It provides user authentication (JWT-based) and task management APIs using **Nod
 - **CORS** enabled by default
 
 ---
-
+To build:
+    docker build -t task-manager-backend .
+To run:
+    docker run -p 4000:4000 task-manager-backend
