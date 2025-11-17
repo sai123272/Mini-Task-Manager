@@ -1,0 +1,146 @@
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f7f9;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 10px;
+}
+
+button {
+  cursor: pointer;
+  background: #4c6ef5;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #3b5bdb;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #4c6ef5;
+}
+
+/* Layout Containers */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Card style */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Text links */
+.link {
+  background: none;
+  color: #4c6ef5;
+  border: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: #777;
+  margin-top: 10px;
+}
+
+.error {
+  color: #d90429;
+  margin-bottom: 10px;
+}
+
+/* Task List */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-item {
+  background: #fff;
+  padding: 15px 15px 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.task-item.done {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.task-item .controls {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.task-item small {
+  color: #888;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 400px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
